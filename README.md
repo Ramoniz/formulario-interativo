@@ -31,4 +31,6 @@ Este projeto é um **formulário interativo** e responsivo construído com **HTM
 ## 🚀 **Como Executar o Projeto**
 Para visualizar o projeto, basta abrir o linl para o meu site no Vercel em qualquer navegador web. Não é necessário instalar nenhuma dependência.
 
+---
+
 👉 Em breve serão adicionadas **novas melhorias** para tornar o Formulário ainda **mais completo**!
