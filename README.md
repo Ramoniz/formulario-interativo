@@ -1,5 +1,6 @@
 # **Formulário Interativo**
-📝 Descrição do Projeto
+
+## 📝 **Descrição do Projeto**
 Este projeto é um **formulário interativo** e responsivo construído com **HTML, CSS e JavaScript**. Ele se destaca pela robusta **validação de dados em tempo real**, proporcionando uma **experiência de usuário fluida e segura*. O formulário foi desenvolvido como uma peça-chave para meu portfólio, demonstrando **habilidades em desenvolvimento front-end**.
 
 ---
