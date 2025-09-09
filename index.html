@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <ul class="apresentacao__progresso">
+            <li class="apresentacao__progresso__item">
+                Criar Conta
+            </li>
+            <li class="apresentacao__progresso__item">
+                Redes Sociais
+            </li>
+            <li class="apresentacao__progresso__item">
+                Informações Pessoais
+            </li>
+        </ul>
+        <!--Etapa 1 -->
+        <form class="apresentacao__formulario" data-formulario>
+            <h1 class="apresentacao__formulario__titulo">
+                CRIE SUA CONTA
+            </h1>
+            <h2 class="apresentacao__formulario__subtitulo">
+                Etapa 1
+            </h2>
+            <fieldset class="apresentacao__formulario__campo">
+                <input class="apresentacao__formulario__entrada" type="email" name="email" placeholder="Email:" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="apresentacao__formulario__campo">
+                <div class="senha-container">
+                    <input class="apresentacao__formulario__entrada" id="senha" type="password" name="senha" placeholder="Senha:" minlength="4" maxlength="14" required>
+                    <i class="fas fa-eye" id="olho-senha"></i>
+                </div>
+                <span class="mensagem-erro"></span>
+
+                <div class="barra-senha-forte">
+                    <div id="indicador-senha-forte" class="indicador-forca"></div>
+                </div>
+                <p id="senha-forte-texto"></p>
+                <p id="tipo">Sua senha precisa conter letras minúsculas e maiúsculas, números e caracteres especiais </p>
+
+            </fieldset>
+            <fieldset class="apresentacao__formulario__campo">
+                <input class="apresentacao__formulario__entrada" id="confirmar-senha" type="password" name="confirmar_senha" placeholder="Confirmar Senha:" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+
+            <div class="apresentacao__formulario__link">
+                <input class="apresentacao__formulario__link__botao" value="Avançar" id="btn-avancar" type="submit" name="proximo">
+                
+            </div>
+        </form>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Ramon do Val</p>
+    </footer>
+
+    <script type="module" src="./js/script.js" defer></script>
+</body>
+</html>

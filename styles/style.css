@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria : #212121;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #6D9886;
+    --cor-hover: #D9CAB3;
+    --cor-rodape: #272727;
+
+    --fonte-primaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(36deg, var(--cor-terciaria), var(--cor-hover));
+
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primaria);
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+}
+
+.apresentacao__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden;
+
+    position: relative;
+    
+    width: 20%;
+    padding: 2% 6%;
+    margin: 0 10%;
+    
+    box-shadow: 1px 1px 6px var(--cor-primaria);
+    border-radius: 5px;
+
+    background-color: var(--cor-secundaria);
+}
+
+.apresentacao__formulario__campo {
+    border: none;
+    display: flex;
+
+    width: 120%;
+}
+
+.apresentacao__formulario form:not(:first-of-type) {
+    display: none;
+}
+
+.apresentacao__formulario__titulo {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.apresentacao__formulario__subtitulo {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+
+.apresentacao__formulario__entrada {
+    margin: 3px 15px;
+    padding: 5%;
+    width: 80%;
+
+    font-weight: 400;
+    font-size: 15px;
+}
+.apresentacao__formulario__campo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.apresentacao__formulario__campo__aniversario {
+    display: grid;
+    grid-template-columns: 30% auto;
+    align-items: center;
+    gap: 10px;
+
+    border: none;
+
+    width: 100%;
+}
+
+.campo-aniversario-texto {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.apresentacao__formulario__termos {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10% auto;
+    gap: 10px;
+
+    margin: 3px 15px;
+    padding: 5%;
+    width: 100%;
+
+    border: none;
+}
+
+.termos__texto {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.mensagem-erro {
+    text-align: justify;
+    color: red;
+    font-size: 0.75rem;
+}
+
+.campo__escrita--erro {
+    border: 2px solid red;
+}
+
+/* Olho que exibe a senha */
+.senha-container {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    position: relative;
+}
+
+#olho-senha {
+    position: absolute;
+    right: 10px;
+    right: 30px;
+    cursor: pointer;
+    color: #666;
+}
+
+/* Verificador de senha forte: */
+.barra-senha-forte {
+    width: 91%;
+    height: 5px;
+    overflow: hidden;
+
+    background-color: #ddd;
+    
+    border-radius: 2px;
+    /* box-shadow: inset 0 1px 3px var(--cor-primaria); */
+
+
+}
+
+.senha-forte-texto {
+    font-size: 0.75rem;
+
+}
+
+.indicador-forca {
+    height: 100%;
+    width: 0;
+    
+    background-color: #e70b0b;
+    transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+#tipo {
+    font-style: italic;
+    text-align: center;
+    font-size: 0.75rem;
+
+    margin: 10px 0;
+    width: 80%;
+}
+
+.apresentacao__formulario__link {
+    display: flex;
+    gap: 8px;
+}
+
+.apresentacao__formulario__link__botao {
+    margin-top: 10px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: 0;
+
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__formulario__link__botao:hover {
+    background-color: var(--cor-hover);
+    cursor: pointer;
+}
+
+/* Página final */
+.final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.container-final {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+.titulo-final {
+    text-align: center;
+}
+
+
+.rodape {
+    height: 48px;
+    padding: 24px;
+
+    background-color: var(--cor-rodape);
+    color: var(--cor-secundaria);
+
+    font-family: var(--fonte-secundaria);
+    font-size: var(--tamanho-fonte-texto);
+    font-weight: 400;
+    text-align: center;
+}
+
+
+@media(max-width: 834px) {
+    .main {
+        overflow: hidden;
+    }
+    .apresentacao__formulario{
+        width: 30%;
+        
+    }
+    .container-final {
+        width: 500px;
+    }
+}

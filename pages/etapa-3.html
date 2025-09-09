@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <ul class="apresentacao__progresso">
+            <li class="apresentacao__progresso__item">
+                Criar Conta
+            </li>
+            <li class="apresentacao__progresso__item">
+                Redes Sociais
+            </li>
+            <li class="apresentacao__progresso__item">
+                Informações Pessoais
+            </li>
+        </ul>
+        <!--Etapa 3 -->
+        <form class="apresentacao__formulario" data-formulario>
+            <h1 class="apresentacao__formulario__titulo">
+                INFORMAÇÕES PESSOAIS
+            </h1>
+            <h2 class="apresentacao__formulario__subtitulo">
+                Etapa Final
+            </h2>
+            <fieldset class="apresentacao__formulario__campo">
+                <input class="apresentacao__formulario__entrada" type="text" name="nome" placeholder="Nome:" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="apresentacao__formulario__campo">
+                <input class="apresentacao__formulario__entrada" type="" name="celular" placeholder="Celular: (00) 00000-0000" minlength="11" maxlength="14" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="apresentacao__formulario__campo">
+                <input class="apresentacao__formulario__entrada" id = "cpf" type="text" name="cpf" placeholder="CPF: 000.000.000-00" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="apresentacao__formulario__campo__aniversario">
+                <label class="campo-aniversario-texto" for="aniversario">Data de Nascimento:</label>
+                <input class="apresentacao__formulario__entrada" id="data-nascimento" name="aniversario" type="date" required>
+                <div></div>
+                <span class="mensagem-erro" id="erro-aniversario"></span>
+            </fieldset>
+            <fieldset class="apresentacao__formulario__termos">
+                <input class="termos__check" name="termos" type="checkbox" required>
+                <p class="termos__texto">Li e Aceito os Termos de Privacidade</p>
+                <span></span>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            
+            <div class="apresentacao__formulario__link">
+                <input class="apresentacao__formulario__link__botao" id="btn-finalizar" value="Finalizar" type="submit" name="finalizar">
+            </div>
+        </form>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Ramon do Val</p>
+    </footer>
+    <script type="module" src="../js/etapa-3.js"></script>
+</body>
+</html>

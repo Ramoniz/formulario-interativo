@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <ul class="apresentacao__progresso">
+            <li class="apresentacao__progresso__item">
+                Criar Conta
+            </li>
+            <li class="apresentacao__progresso__item">
+                Redes Sociais
+            </li>
+            <li class="apresentacao__progresso__item">
+                Informações Pessoais
+            </li>
+        </ul>
+        <!--Etapa 2 -->
+        <form class="apresentacao__formulario" data-formulario>
+            <h1 class="apresentacao__formulario__titulo">
+                REDES SOCIAIS
+            </h1>
+            <h2 class="apresentacao__formulario__subtitulo">
+                Etapa 2
+            </h2>
+            <fieldset class="apresentacao__formulario__campo">
+                <input class="apresentacao__formulario__entrada" type="text" name="instagram" placeholder="Instagram:" required>
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="apresentacao__formulario__campo">
+                <input class="apresentacao__formulario__entrada" type="text" name="linkedin" placeholder="Linkedin:">
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <fieldset class="apresentacao__formulario__campo">
+                <input class="apresentacao__formulario__entrada" type="text" name="GitHub" placeholder="GitHub:">
+                <span class="mensagem-erro"></span>
+            </fieldset>
+            <div class="apresentacao__formulario__link">
+                <input class="apresentacao__formulario__link__botao" id="btn-proximo" type="submit" name="proximo" value="Próximo">
+            </div>
+        </form>
+    </main> 
+    <footer class="rodape">
+        <p>Desenvolvido por Ramon do Val</p>
+    </footer>
+    <script src="../js/etapa-2.js"></script>
+</body>
+</html>
