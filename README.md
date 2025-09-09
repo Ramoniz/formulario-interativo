@@ -5,17 +5,17 @@ Este projeto é um **formulário interativo** e responsivo construído com **HTM
 ---
 
 ## ✨ **Funcionalidades Principais**
-**Validação de Senha em Tempo Real:** Uma barra de progresso visual (com mudança de cores) indica a força da senha do usuário, classificando-a como fraca, moderada, forte ou excelente.
+  - **Validação de Senha em Tempo Real:** Uma barra de progresso visual (com mudança de cores) indica a força da senha do usuário, classificando-a como fraca, moderada, forte ou excelente.
 
-**Validação de CPF:** Impede que o usuário insira um número de CPF inválido, garantindo a integridade dos dados.
+  - **Validação de CPF:** Impede que o usuário insira um número de CPF inválido, garantindo a integridade dos dados.
 
-**Validação de Idade:** Verifica se o usuário é maior de idade antes de prosseguir com o cadastro.
+  - **Validação de Idade:** Verifica se o usuário é maior de idade antes de prosseguir com o cadastro.
 
-**Manipulação do DOM:** Utiliza JavaScript puro para interagir dinamicamente com os elementos da página.
+  - **Manipulação do DOM:** Utiliza JavaScript puro para interagir dinamicamente com os elementos da página.
 
-**Armazenamento Local:** Os dados do formulário são salvos no LocalStorage do navegador.
+  - **Armazenamento Local:** Os dados do formulário são salvos no LocalStorage do navegador.
 
-**Design Responsivo:** O layout se adapta perfeitamente a diferentes tamanhos de tela (desktops, tablets e celulares) utilizando Flexbox e Grid.
+  - **Design Responsivo:** O layout se adapta perfeitamente a diferentes tamanhos de tela (desktops, tablets e celulares) utilizando Flexbox e Grid.
 
 ---
 
