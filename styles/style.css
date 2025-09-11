@@ -52,6 +52,7 @@ body {
     border-radius: 10px;
     box-shadow: 1px 1px 6px var(--cor-primaria);
 
+
     font-size: 1.5rem;
 }
 
@@ -129,6 +130,7 @@ body {
     display: grid;
     grid-template-columns: 30% auto;
     align-items: center;
+    box-sizing: border-box;
     gap: 10px;
 
     border: none;
@@ -138,7 +140,7 @@ body {
 
 .campo-aniversario-texto {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .apresentacao__formulario__termos {
@@ -181,7 +183,6 @@ body {
 
 #olho-senha {
     position: absolute;
-    right: 10px;
     right: 30px;
     cursor: pointer;
     color: #666;
@@ -285,7 +286,7 @@ body {
     text-align: center;
 }
 
-@media(max-width: 834px) {
+@media(max-width: 600px) {
     .main {
         overflow: hidden;
     }
@@ -302,19 +303,32 @@ body {
     margin-bottom: 30px;
     font-size: 1rem;
     }
+    #olho-senha {
+        
+    }
+
     .apresentacao__formulario{
-        width: 55%;
+        width: 60%;
     }
     .container-final {
         width: 500px;
     }
 }
 
-@media(max-width: 1040px) {
+@media only screen and (min-width: 600px) and (max-width: 800px) {
     .main {
         overflow: hidden;
     }
     .apresentacao__formulario {
-        width: 35%;
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+    .main {
+        overflow: hidden;
+    }
+    .apresentacao__formulario {
+        width: 30%;
     }
 }
